@@ -1,0 +1,4 @@
+include:
+  - project: 'Fortbrasil/devops/gitlab-ci-templates'
+    file: '.gitlab-ci-docker-app-func-sonar-prod-release.yml'
+

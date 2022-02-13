@@ -1,0 +1,1 @@
+{"openapi":"3.0.0","paths":{},"info":{"title":"Microsserviço Authentication B2B","description":"Documentação do microsserviço","version":"1.0","contact":{}},"tags":[{"name":"Authentication B2B","description":"Controlador com a função de integracão com a string de dados do Authentication B2B"}],"servers":[],"components":{"schemas":{}}}

@@ -1,0 +1,20 @@
+version: '3.9'
+
+services:
+  db:
+    container_name: mssql-budpjctnet
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      SA_PASSWORD: Admin123@
+      ACCEPT_EULA: Y
+    ports:
+      - 1433:1433
+
+  app:
+    container_name: auth-b2b
+    build: .
+    command: sh -c "yarn db:create && yarn typeorm migration:run && yarn start:dev"
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/usr/app
